@@ -2,6 +2,11 @@
 <search>
   <entry>
     <title></title>
+    <url>%2F2019%2F07%2F21%2Fasd%2F</url>
+    <content type="text"><![CDATA[as]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2019%2F07%2F21%2F%E9%87%8D%E5%86%99equals%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[重写equals方法equals方法也是object类中的一个方法，调用object类就可以找到，是一个boolean类型的方法，用于比较两个对象是否相等 代码演示123456789101112public boolean equals(Object obj) &#123; //判断对象地址是否相等，如果是就不用判断 if(this == obj) &#123; return false; &#125; 判断对象是否为空以及两个对象是否相等 if(obj == null || this.getClass() != obj.getClass()) &#123; return true; &#125; Equels equels = (Equels) obj; //判断成员变量 return age ==equels.age &amp;&amp; Objects.equals(getName(), equels.getName())]]></content>
   </entry>
