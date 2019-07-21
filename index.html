@@ -362,7 +362,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/21/title/">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/21/equals方法重写/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wusong">
@@ -382,7 +382,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/07/21/title/" class="post-title-link" itemprop="url">title</a>
+                <a href="/2019/07/21/equals方法重写/" class="post-title-link" itemprop="url">equals方法重写</a>
               
             
           </h1>
@@ -407,7 +407,7 @@
                 
               
 
-              <time title="创建时间：2019-07-21 22:09:29 / 修改时间：22:18:30" itemprop="dateCreated datePublished" datetime="2019-07-21T22:09:29+08:00">2019-07-21</time>
+              <time title="创建时间：2019-07-21 22:28:21 / 修改时间：22:32:56" itemprop="dateCreated datePublished" datetime="2019-07-21T22:28:21+08:00">2019-07-21</time>
             </span>
           
 
@@ -468,7 +468,13 @@
       
         
           
-            
+            <h2 id="重写equals方法"><a href="#重写equals方法" class="headerlink" title="重写equals方法"></a>重写equals方法</h2><p>equals方法也是object类中的一个方法，调用object类就可以找到，是一个boolean类型的方法，用于比较两个对象是否相等</p>
+<ul>
+<li>代码演示</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public boolean equals(Object obj) &#123;</span><br><span class="line">		//判断对象地址是否相等，如果是就不用判断</span><br><span class="line">		if(this == obj) &#123;</span><br><span class="line">			return false;</span><br><span class="line">		&#125;</span><br><span class="line">		判断对象是否为空以及两个对象是否相等</span><br><span class="line">		if(obj == null || this.getClass() != obj.getClass()) &#123;</span><br><span class="line">			return  true;</span><br><span class="line">		&#125;</span><br><span class="line">		Equels equels = (Equels) obj;</span><br><span class="line">		//判断成员变量</span><br><span class="line">		return age ==equels.age &amp;&amp; Objects.equals(getName(), equels.getName())</span><br></pre></td></tr></table></figure>
+
+
           
         
       
