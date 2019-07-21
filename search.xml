@@ -4,5 +4,11 @@
     <title><![CDATA[title]]></title>
     <url>%2F2019%2F07%2F21%2Ftitle%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
 </search>
