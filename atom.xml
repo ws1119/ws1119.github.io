@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ws1119.github.io/"/>
-  <updated>2019-07-21T14:32:56.002Z</updated>
+  <updated>2019-07-22T16:05:21.681Z</updated>
   <id>http://ws1119.github.io/</id>
   
   <author>
@@ -17,11 +17,85 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>泛型</title>
+    <link href="http://ws1119.github.io/2019/07/23/%E6%B3%9B%E5%9E%8B-1/"/>
+    <id>http://ws1119.github.io/2019/07/23/泛型-1/</id>
+    <published>2019-07-22T16:03:27.000Z</published>
+    <updated>2019-07-22T16:05:21.681Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;泛型&quot;&gt;&lt;a href=&quot;#泛型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://ws1119.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>反射</title>
+    <link href="http://ws1119.github.io/2019/07/22/%E5%8F%8D%E5%B0%84/"/>
+    <id>http://ws1119.github.io/2019/07/22/反射/</id>
+    <published>2019-07-22T15:58:44.000Z</published>
+    <updated>2019-07-22T16:00:33.547Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;反射&quot;&gt;&lt;a href=&quot;#反射&quot; class=&quot;headerlink&quot; title=&quot;反射&quot;&gt;&lt;/a&gt;反射&lt;/h1&gt;&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://ws1119.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java开发环境配置</title>
+    <link href="http://ws1119.github.io/2019/07/21/Java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://ws1119.github.io/2019/07/21/Java开发环境配置/</id>
+    <published>2019-07-21T15:08:03.000Z</published>
+    <updated>2019-07-21T15:20:07.238Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Windows上安装Java环境&quot;&gt;&lt;a href=&quot;#Windows上安装Java环境&quot; class=&quot;headerlink&quot; title=&quot;Windows上安装Java环境&quot;&gt;&lt;/a&gt;Windows上安装Java环境&lt;/h1&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="Java" scheme="http://ws1119.github.io/categories/Java/"/>
+    
+    
+      <category term="Java基础" scheme="http://ws1119.github.io/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>equals方法重写</title>
     <link href="http://ws1119.github.io/2019/07/21/equals%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99/"/>
     <id>http://ws1119.github.io/2019/07/21/equals方法重写/</id>
     <published>2019-07-21T14:28:21.000Z</published>
-    <updated>2019-07-21T14:32:56.002Z</updated>
+    <updated>2019-07-21T15:10:16.141Z</updated>
     
     <summary type="html">
     
@@ -35,10 +109,10 @@
     
     </summary>
     
-      <category term="Java基础" scheme="http://ws1119.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+      <category term="Java" scheme="http://ws1119.github.io/categories/Java/"/>
     
     
-      <category term="Java" scheme="http://ws1119.github.io/tags/Java/"/>
+      <category term="Java基础" scheme="http://ws1119.github.io/tags/Java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
