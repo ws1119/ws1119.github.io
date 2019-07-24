@@ -91,18 +91,18 @@
   };
 </script>
 
-  <meta name="description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+  <meta name="description" content="I/O流流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作 分类 根据处理数据类型的不同分为：字符流和字节流 根据数据流向不同分为：输入流和输出流 缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泛型">
-<meta property="og:url" content="http://ws1119.github.io/2019/07/23/泛型-1/index.html">
+<meta property="og:title" content="I&#x2F;O流">
+<meta property="og:url" content="http://ws1119.github.io/2019/07/24/I-O流/index.html">
 <meta property="og:site_name" content="Wusong blog">
-<meta property="og:description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+<meta property="og:description" content="I/O流流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作 分类 根据处理数据类型的不同分为：字符流和字节流 根据数据流向不同分为：输入流和输出流 缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-22T16:05:21.681Z">
+<meta property="og:updated_time" content="2019-07-24T15:53:19.536Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="泛型">
-<meta name="twitter:description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+<meta name="twitter:title" content="I&#x2F;O流">
+<meta name="twitter:description" content="I/O流流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作 分类 根据处理数据类型的不同分为：字符流和字节流 根据数据流向不同分为：输入流和输出流 缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的">
 
 
 
@@ -112,7 +112,7 @@
 
   
   
-  <link rel="canonical" href="http://ws1119.github.io/2019/07/23/泛型-1/">
+  <link rel="canonical" href="http://ws1119.github.io/2019/07/24/I-O流/">
 
 
 
@@ -123,7 +123,7 @@
 </script>
 
   
-  <title>泛型 | Wusong blog</title>
+  <title>I/O流 | Wusong blog</title>
   
 
 
@@ -363,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/23/泛型-1/">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/24/I-O流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wusong">
@@ -380,7 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">泛型
+          <h1 class="post-title" itemprop="name headline">I/O流
 
               
             
@@ -406,7 +406,7 @@
                 
               
 
-              <time title="创建时间：2019-07-23 00:03:27 / 修改时间：00:05:21" itemprop="dateCreated datePublished" datetime="2019-07-23T00:03:27+08:00">2019-07-23</time>
+              <time title="创建时间：2019-07-24 23:20:12 / 修改时间：23:53:19" itemprop="dateCreated datePublished" datetime="2019-07-24T23:20:12+08:00">2019-07-24</time>
             </span>
           
 
@@ -458,21 +458,59 @@
       
 
       
-        <h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><p>解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义</p>
-<p>关键字<t></t></p>
-<h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><p>但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出</p>
-<h2 id="泛型接口"><a href="#泛型接口" class="headerlink" title="泛型接口"></a>泛型接口</h2><p>泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类要指明实现接口的数据类型；使用泛型接口的时候，如果是普通类，则不能任意改变其泛型接口的类型</p>
-<p>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个泛型接口</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span>  <span class="title">IMessage</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="comment">//抽象方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span>  <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(T t)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//在子类继续定义泛型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span>  <span class="title">MessageImpl</span>&lt;<span class="title">T</span>&gt; <span class="keyword">implements</span> <span class="title">IMessage</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子类不设置泛型，而在接口处直接实现具体泛型类型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span>  <span class="title">MessageImpl2</span> <span class="keyword">implements</span> <span class="title">IMessage</span>&lt;<span class="title">String</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(String t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//main方法测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GInterface</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		IMessage&lt;String&gt; ii= <span class="keyword">new</span> MessageImpl &lt;String&gt;();</span><br><span class="line">		<span class="comment">//泛型接口，子类实现出可以改变数据类型</span></span><br><span class="line">		IMessage&lt;Integer&gt; ii3= <span class="keyword">new</span> MessageImpl &lt;Integer&gt;();</span><br><span class="line">		ii3.print(<span class="number">23</span>);</span><br><span class="line">		ii.print(<span class="string">"hello world"</span>);</span><br><span class="line">				</span><br><span class="line">		IMessage&lt;String&gt; ii2  = <span class="keyword">new</span> MessageImpl2();</span><br><span class="line">		ii2.print(<span class="string">"hello world"</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>泛型接口使得我们的方法变得通用</p>
-<h2 id="泛型的上限下限"><a href="#泛型的上限下限" class="headerlink" title="泛型的上限下限"></a>泛型的上限下限</h2><ul>
-<li><p>【类和方法】设置泛型上限（？extends类）：只能使用当前类的子类是指泛型类型；如：“？extends Number:可以设置Number或Number的子类，如double不能设置String</p>
+        <h1 id="I-O流"><a href="#I-O流" class="headerlink" title="I/O流"></a>I/O流</h1><p>流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>根据处理数据类型的不同分为：字符流和字节流</li>
+<li>根据数据流向不同分为：输入流和输出流</li>
+<li>缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的效率</li>
+</ul>
+<h2 id="流对象"><a href="#流对象" class="headerlink" title="流对象"></a>流对象</h2><ul>
+<li><h3 id="输入字节流InputStream"><a href="#输入字节流InputStream" class="headerlink" title="输入字节流InputStream"></a>输入字节流InputStream</h3><p>InputStream 是所有的输入字节流的父类，它是一个抽象类。ByteArrayInputStream、StringBufferInputStream、FileInputStream 是三种基本的介质流，它们分别从Byte 数组、StringBuffer、和本地文件中读取数据。FileInputStream类可以通过一个String路径名创建一个对象，FileInputStream(String name)</p>
+<p>示例:    </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		File file=<span class="keyword">new</span> File(<span class="string">"F:\\filetest\\a.txt"</span>);</span><br><span class="line">		FileInputStream fis=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			fis = <span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">			<span class="keyword">byte</span> data[]=<span class="keyword">new</span> <span class="keyword">byte</span>[(<span class="keyword">int</span>)file.length()];</span><br><span class="line">			<span class="keyword">int</span> len =fis.read(data);</span><br><span class="line">			System.out.println(<span class="keyword">new</span> String(data,<span class="number">0</span>,len));</span><br><span class="line">			</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">            fis.close();</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>【方法】设置泛型下限（？ super类）：只能使用指定类或者父类设置泛型类型；如：“？ super String”:只能使用String类或Objects设置泛型类型</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//【类和方法】设置泛型上限</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Message1</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Number</span>&gt;</span>&#123;</span><br><span class="line">	<span class="keyword">private</span> T msg;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">getMsg</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMsg</span><span class="params">(T msg)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.msg = msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">(Message1&lt;? extends Number&gt; temp)</span> </span>&#123;</span><br><span class="line">		System.out.println(temp.getMsg());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><h3 id="输出字节流OutputStream"><a href="#输出字节流OutputStream" class="headerlink" title="输出字节流OutputStream"></a>输出字节流OutputStream</h3><p>OutputStream 是所有的输出字节流的父类，它是一个抽象类。ByteArrayOutputStream、FileOutputStream是两种基本的介质流，它们分别向Byte 数组、和本地文件中写入数据。</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">File file=<span class="keyword">new</span> File(<span class="string">"F:\\filetest\\a.txt"</span>);</span><br><span class="line">		FileInputStream fis=<span class="keyword">null</span>;</span><br><span class="line">		<span class="comment">//写入磁盘</span></span><br><span class="line">		FileOutputStream fos=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			fos = <span class="keyword">new</span> FileOutputStream(file);</span><br><span class="line">			String str=<span class="string">"中华人民共和国"</span>;</span><br><span class="line">			<span class="keyword">byte</span>[] b=str.getBytes();</span><br><span class="line">			fos.write(b,<span class="number">0</span>,b.length);</span><br><span class="line">			fos.write(<span class="number">555</span>);</span><br><span class="line">			fos.write(b,<span class="number">3</span>,<span class="number">15</span>);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line"></span><br><span class="line">		&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				fos.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">		</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//【方法】设置泛型上限</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Message2</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="keyword">private</span> T msg;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">getMsg</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMsg</span><span class="params">(T msg)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.msg = msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//设置泛型下限</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">(Message2&lt;? <span class="keyword">super</span> String&gt; temp)</span> </span>&#123;</span><br><span class="line">		System.out.println(temp.getMsg());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="字符输入流Reader"><a href="#字符输入流Reader" class="headerlink" title="字符输入流Reader"></a>字符输入流Reader</h3><p>Reader 是所有的输入字符流的父类，它是一个抽象类。</p>
+<p>CharReader、StringReader是两种基本的介质流，它们分别将Char 数组、String中读取数据。PipedReader 是从与其它线程共用的管道中读取数据。</p>
+<p>InputStreamReader 是一个连接字节流和字符流的桥梁，它将字节流转变为字符流。FileReader可以说是一个达到此功能、常用的工具类，在其源代码中明显使用了将FileInputStream 转变为Reader 的方法。我们可以从这个类中得到一定的技巧。</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">File file=<span class="keyword">new</span> File(<span class="string">"F:\\filetest\\b.txt"</span>);</span><br><span class="line">		FileReader fr=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			fr=<span class="keyword">new</span> FileReader(file);</span><br><span class="line">			<span class="keyword">int</span> b;</span><br><span class="line">			<span class="keyword">char</span>[] cbuf=<span class="keyword">new</span> <span class="keyword">char</span>[<span class="number">50</span>];</span><br><span class="line">			<span class="keyword">while</span>((b=fr.read(cbuf))!=-<span class="number">1</span>) &#123;</span><br><span class="line">				<span class="comment">//System.out.print((char)b);</span></span><br><span class="line">				System.out.print(<span class="keyword">new</span> String(cbuf,<span class="number">0</span>,b));</span><br><span class="line">				fr.close();</span><br><span class="line">			&#125;	</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.getStackTrace();</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="字符输出流Writer"><a href="#字符输出流Writer" class="headerlink" title="字符输出流Writer"></a>字符输出流Writer</h3><p>Writer 是所有的输出字符流的父类，它是一个抽象类。</p>
+<p>CharArrayWriter、StringWriter 是两种基本的介质流，它们分别向Char 数组、String 中写入数据。</p>
+<p>PipedWriter 是向与其它线程共用的管道中写入数据，</p>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">File file1=new File(&quot;F:\\filetest\\b.txt&quot;);</span><br><span class="line">		try &#123;</span><br><span class="line">			FileWriter fw = new FileWriter(file1);</span><br><span class="line">			String string=&quot;中华人民共和国&quot;;</span><br><span class="line">			char charray[]=string.toCharArray();</span><br><span class="line">			fw.write(charray);</span><br><span class="line">			fw.write(&apos;\r&apos;);</span><br><span class="line">			fw.write(66666);</span><br><span class="line">			fw.write(&quot;中和共和国&quot;);</span><br><span class="line">			fw.flush();//这个方法不是关闭流，有什么作用:</span><br><span class="line">			fw.close();</span><br><span class="line">			</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="字节缓冲流"><a href="#字节缓冲流" class="headerlink" title="字节缓冲流"></a>字节缓冲流</h3><p>构造方法：</p>
+<p><code>public BufferedInputStream(InpuStream in):创建一个新的缓冲输入流</code></p>
+<p><code>public BufferedOutputStream(OupuStream out)</code>:创建一个新的缓冲输出流</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span>  <span class="title">bufferdIOStream</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">BufferedInputStream fis=<span class="keyword">new</span> BufferedInputStream(<span class="keyword">new</span> FileInputStream(<span class="string">"F:\\filetest\\jdk-8u181-windows-x64.exe"</span>));</span><br><span class="line">BufferedOutputStream fos=<span class="keyword">new</span> BufferedOutputStream(<span class="keyword">new</span> FileOutputStream(<span class="string">"E:\\"</span>));</span><br><span class="line"><span class="comment">//读数据</span></span><br><span class="line"><span class="keyword">int</span> b;</span><br><span class="line"><span class="keyword">long</span> start=System.currentTimeMillis();</span><br><span class="line"><span class="keyword">while</span> ((b=fis.read())!=-<span class="number">1</span>) &#123;</span><br><span class="line">		fos.write(b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">long</span> end=System.currentTimeMillis();</span><br><span class="line">System.out.println(<span class="string">"结束时间："</span>+end);</span><br><span class="line">System.out.println(<span class="string">"执行时间："</span>+((end-start)/<span class="number">1000</span>)+<span class="string">"s"</span>);</span><br><span class="line">		</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><h3 id="字符缓冲流"><a href="#字符缓冲流" class="headerlink" title="字符缓冲流"></a>字符缓冲流</h3><p>构造方法：</p>
+<p><code>BufferedReader br=new BufferedReader(new FileReader(&quot;&quot;)):创建一个新的缓冲输入流</code></p>
+<p><code>BufferedWriter bw=new BufferedWriter(new FileWriter(&quot;&quot;))</code>:创建一个新的缓冲输出流</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Buffer_StringStream</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">buffer_RW</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">		BufferedReader br=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(<span class="string">""</span>));</span><br><span class="line">		BufferedWriter bw=<span class="keyword">new</span> BufferedWriter(<span class="keyword">new</span> FileWriter(<span class="string">""</span>));</span><br><span class="line">		String line=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">while</span>((line=br.readLine())!=<span class="keyword">null</span>) &#123;</span><br><span class="line">				System.out.print(line);</span><br><span class="line">				System.out.println(<span class="string">"-----------"</span>);</span><br><span class="line">				bw.write(line);</span><br><span class="line">		&#125;</span><br><span class="line">		br.close();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -531,8 +569,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/22/反射/" rel="next" title="反射">
-                <i class="fa fa-chevron-left"></i> 反射
+              <a href="/2019/07/24/递归/" rel="next" title="递归">
+                <i class="fa fa-chevron-left"></i> 递归
               </a>
             
           </div>
@@ -540,10 +578,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/24/File类/" rel="prev" title="File类">
-                File类 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -688,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型"><span class="nav-number">1.</span> <span class="nav-text">泛型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符"><span class="nav-number">1.1.</span> <span class="nav-text">通配符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛型接口"><span class="nav-number">1.2.</span> <span class="nav-text">泛型接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛型的上限下限"><span class="nav-number">1.3.</span> <span class="nav-text">泛型的上限下限</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#I-O流"><span class="nav-number">1.</span> <span class="nav-text">I/O流</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">1.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#流对象"><span class="nav-number">1.2.</span> <span class="nav-text">流对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#输入字节流InputStream"><span class="nav-number">1.2.1.</span> <span class="nav-text">输入字节流InputStream</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出字节流OutputStream"><span class="nav-number">1.2.2.</span> <span class="nav-text">输出字节流OutputStream</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符输入流Reader"><span class="nav-number">1.2.3.</span> <span class="nav-text">字符输入流Reader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符输出流Writer"><span class="nav-number">1.2.4.</span> <span class="nav-text">字符输出流Writer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字节缓冲流"><span class="nav-number">1.2.5.</span> <span class="nav-text">字节缓冲流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符缓冲流"><span class="nav-number">1.2.6.</span> <span class="nav-text">字符缓冲流</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

@@ -91,18 +91,18 @@
   };
 </script>
 
-  <meta name="description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+  <meta name="description" content="递归递归是指在当前方法内调用自己的这种现象  分类 直接递归：方法自身调用自己 间接递归：从A方法调用B方法，B方法调用C方法，C方法调用A方法  注意 递归一定要有条件限制，保证递归能够停止下来，否则会发生栈内存溢出  在递归中虽然有条件限制，但是递归次数不能太多，否则也会发生栈内存溢出  构造方法禁止递归 例子，打印多级目录 1234567891011121314151617181920212">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泛型">
-<meta property="og:url" content="http://ws1119.github.io/2019/07/23/泛型-1/index.html">
+<meta property="og:title" content="递归">
+<meta property="og:url" content="http://ws1119.github.io/2019/07/24/递归/index.html">
 <meta property="og:site_name" content="Wusong blog">
-<meta property="og:description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+<meta property="og:description" content="递归递归是指在当前方法内调用自己的这种现象  分类 直接递归：方法自身调用自己 间接递归：从A方法调用B方法，B方法调用C方法，C方法调用A方法  注意 递归一定要有条件限制，保证递归能够停止下来，否则会发生栈内存溢出  在递归中虽然有条件限制，但是递归次数不能太多，否则也会发生栈内存溢出  构造方法禁止递归 例子，打印多级目录 1234567891011121314151617181920212">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-22T16:05:21.681Z">
+<meta property="og:updated_time" content="2019-07-24T15:11:53.050Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="泛型">
-<meta name="twitter:description" content="泛型解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义 关键字 通配符但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出 泛型接口泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类">
+<meta name="twitter:title" content="递归">
+<meta name="twitter:description" content="递归递归是指在当前方法内调用自己的这种现象  分类 直接递归：方法自身调用自己 间接递归：从A方法调用B方法，B方法调用C方法，C方法调用A方法  注意 递归一定要有条件限制，保证递归能够停止下来，否则会发生栈内存溢出  在递归中虽然有条件限制，但是递归次数不能太多，否则也会发生栈内存溢出  构造方法禁止递归 例子，打印多级目录 1234567891011121314151617181920212">
 
 
 
@@ -112,7 +112,7 @@
 
   
   
-  <link rel="canonical" href="http://ws1119.github.io/2019/07/23/泛型-1/">
+  <link rel="canonical" href="http://ws1119.github.io/2019/07/24/递归/">
 
 
 
@@ -123,7 +123,7 @@
 </script>
 
   
-  <title>泛型 | Wusong blog</title>
+  <title>递归 | Wusong blog</title>
   
 
 
@@ -363,7 +363,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/23/泛型-1/">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/24/递归/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Wusong">
@@ -380,7 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">泛型
+          <h1 class="post-title" itemprop="name headline">递归
 
               
             
@@ -406,7 +406,7 @@
                 
               
 
-              <time title="创建时间：2019-07-23 00:03:27 / 修改时间：00:05:21" itemprop="dateCreated datePublished" datetime="2019-07-23T00:03:27+08:00">2019-07-23</time>
+              <time title="创建时间：2019-07-24 23:01:04 / 修改时间：23:11:53" itemprop="dateCreated datePublished" datetime="2019-07-24T23:01:04+08:00">2019-07-24</time>
             </span>
           
 
@@ -458,21 +458,22 @@
       
 
       
-        <h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><p>解决了向上向下转型带来的安全隐患，约束了参数的类型，在定义类的时候，对于类属性名，方法的参数不用指明哪一种参数，在使用的时候定义</p>
-<p>关键字<t></t></p>
-<h2 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h2><p>但我们使用泛型的时候，对于数据类型，在使用的时候无法确定，使用多种类型的时候，方法的重载搞不定，重载与泛型的重载类型不相关，在重载解决不了的时候，引出</p>
-<h2 id="泛型接口"><a href="#泛型接口" class="headerlink" title="泛型接口"></a>泛型接口</h2><p>泛型接口是在定义时能够接受任何类型的接口，子类可以是一个泛型类，也可以是普通类；如果是普通类要指明实现接口的数据类型；使用泛型接口的时候，如果是普通类，则不能任意改变其泛型接口的类型</p>
-<p>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个泛型接口</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span>  <span class="title">IMessage</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="comment">//抽象方法</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span>  <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(T t)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//在子类继续定义泛型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span>  <span class="title">MessageImpl</span>&lt;<span class="title">T</span>&gt; <span class="keyword">implements</span> <span class="title">IMessage</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子类不设置泛型，而在接口处直接实现具体泛型类型</span></span><br><span class="line"><span class="class"><span class="keyword">class</span>  <span class="title">MessageImpl2</span> <span class="keyword">implements</span> <span class="title">IMessage</span>&lt;<span class="title">String</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(String t)</span> </span>&#123;</span><br><span class="line">		System.out.println(t);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//main方法测试</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GInterface</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		IMessage&lt;String&gt; ii= <span class="keyword">new</span> MessageImpl &lt;String&gt;();</span><br><span class="line">		<span class="comment">//泛型接口，子类实现出可以改变数据类型</span></span><br><span class="line">		IMessage&lt;Integer&gt; ii3= <span class="keyword">new</span> MessageImpl &lt;Integer&gt;();</span><br><span class="line">		ii3.print(<span class="number">23</span>);</span><br><span class="line">		ii.print(<span class="string">"hello world"</span>);</span><br><span class="line">				</span><br><span class="line">		IMessage&lt;String&gt; ii2  = <span class="keyword">new</span> MessageImpl2();</span><br><span class="line">		ii2.print(<span class="string">"hello world"</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-<p>泛型接口使得我们的方法变得通用</p>
-<h2 id="泛型的上限下限"><a href="#泛型的上限下限" class="headerlink" title="泛型的上限下限"></a>泛型的上限下限</h2><ul>
-<li><p>【类和方法】设置泛型上限（？extends类）：只能使用当前类的子类是指泛型类型；如：“？extends Number:可以设置Number或Number的子类，如double不能设置String</p>
+        <h1 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h1><p>递归是指在当前方法内调用自己的这种现象 </p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>直接递归：方法自身调用自己</li>
+<li>间接递归：从A方法调用B方法，B方法调用C方法，C方法调用A方法</li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul>
+<li><p>递归一定要有条件限制，保证递归能够停止下来，否则会发生栈内存溢出</p>
 </li>
-<li><p>【方法】设置泛型下限（？ super类）：只能使用指定类或者父类设置泛型类型；如：“？ super String”:只能使用String类或Objects设置泛型类型</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//【类和方法】设置泛型上限</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Message1</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Number</span>&gt;</span>&#123;</span><br><span class="line">	<span class="keyword">private</span> T msg;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">getMsg</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMsg</span><span class="params">(T msg)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.msg = msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">(Message1&lt;? extends Number&gt; temp)</span> </span>&#123;</span><br><span class="line">		System.out.println(temp.getMsg());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p>在递归中虽然有条件限制，但是递归次数不能太多，否则也会发生栈内存溢出</p>
+</li>
+<li><p>构造方法禁止递归</p>
+<p>例子，打印多级目录</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		printDir(<span class="keyword">new</span> File(<span class="string">"d:\\jdk1.8"</span>));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printDir</span><span class="params">(File dir)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		File[] dFiles = dir.listFiles();</span><br><span class="line">		<span class="keyword">if</span> (<span class="keyword">null</span> == dFiles || dFiles.equals(<span class="keyword">null</span>))</span><br><span class="line">			<span class="keyword">return</span>;<span class="comment">// 判断是否为空</span></span><br><span class="line">		<span class="keyword">for</span> (File file : dFiles) &#123;</span><br><span class="line">			<span class="keyword">if</span> (file.isFile()) &#123;</span><br><span class="line">				System.out.println(<span class="string">"文件名绝对路径"</span> + file.getAbsolutePath());</span><br><span class="line">				System.out.println(<span class="string">"文件名"</span> + file.getName());</span><br><span class="line">				<span class="comment">// 文件大小</span></span><br><span class="line">				<span class="keyword">long</span> filesize = file.length();</span><br><span class="line">				System.out.println(filesize + <span class="string">"byte"</span> + filesize / <span class="number">1024</span> + <span class="string">"kb"</span> + <span class="string">","</span> + filesize / <span class="number">1024</span> / <span class="number">1024</span> + <span class="string">"m"</span>);<span class="comment">// 字节</span></span><br><span class="line">				String exstr = file.getName().substring(file.getName().lastIndexOf(<span class="string">"."</span>) + <span class="number">1</span>, file.getName().length());</span><br><span class="line">				System.out.println(<span class="string">"拓展名："</span> + exstr);</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (file.isDirectory()) &#123;</span><br><span class="line">				System.out.println(<span class="string">"目录名绝对路径"</span> + file.getAbsolutePath());</span><br><span class="line">				System.out.println(<span class="string">"目录名"</span> + file.getName());</span><br><span class="line">				printDir(file);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//【方法】设置泛型上限</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Message2</span>&lt;<span class="title">T</span>&gt;</span>&#123;</span><br><span class="line">	<span class="keyword">private</span> T msg;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> T <span class="title">getMsg</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMsg</span><span class="params">(T msg)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.msg = msg;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//设置泛型下限</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fun</span><span class="params">(Message2&lt;? <span class="keyword">super</span> String&gt; temp)</span> </span>&#123;</span><br><span class="line">		System.out.println(temp.getMsg());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>打印出1-100的和</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">	funSum(<span class="number">1</span>);</span><br><span class="line">	System.out.println(<span class="string">"sum="</span>+sum);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">funSum</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">	sum += i;</span><br><span class="line">	System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">	<span class="comment">// 保证递归能够停下来，递归要有限制条件，否则会发生内存溢出</span></span><br><span class="line">	<span class="keyword">if</span> (i == <span class="number">100</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	i++;</span><br><span class="line">	funSum(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
@@ -531,8 +532,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/22/反射/" rel="next" title="反射">
-                <i class="fa fa-chevron-left"></i> 反射
+              <a href="/2019/07/24/File类/" rel="next" title="File类">
+                <i class="fa fa-chevron-left"></i> File类
               </a>
             
           </div>
@@ -541,8 +542,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/24/File类/" rel="prev" title="File类">
-                File类 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/24/I-O流/" rel="prev" title="I/O流">
+                I/O流 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -688,7 +689,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型"><span class="nav-number">1.</span> <span class="nav-text">泛型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符"><span class="nav-number">1.1.</span> <span class="nav-text">通配符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛型接口"><span class="nav-number">1.2.</span> <span class="nav-text">泛型接口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛型的上限下限"><span class="nav-number">1.3.</span> <span class="nav-text">泛型的上限下限</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#递归"><span class="nav-number">1.</span> <span class="nav-text">递归</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">1.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">1.2.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></div>
             
 
           </div>
