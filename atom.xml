@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ws1119.github.io/"/>
-  <updated>2019-07-24T15:53:19.536Z</updated>
+  <updated>2019-08-09T11:33:01.595Z</updated>
   <id>http://ws1119.github.io/</id>
   
   <author>
@@ -17,11 +17,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Web API</title>
+    <link href="http://ws1119.github.io/2019/08/09/Web-API/"/>
+    <id>http://ws1119.github.io/2019/08/09/Web-API/</id>
+    <published>2019-08-09T11:28:26.000Z</published>
+    <updated>2019-08-09T11:33:01.595Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web-API&quot;&gt;&lt;a href=&quot;#Web-API&quot; class=&quot;headerlink&quot; title=&quot;Web API&quot;&gt;&lt;/a&gt;Web API&lt;/h1&gt;&lt;h2 id=&quot;Web-API介绍&quot;&gt;&lt;a href=&quot;#Web-API介绍&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Web API" scheme="http://ws1119.github.io/tags/Web-API/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抽象类</title>
+    <link href="http://ws1119.github.io/2019/07/26/%E6%8A%BD%E8%B1%A1%E7%B1%BB/"/>
+    <id>http://ws1119.github.io/2019/07/26/抽象类/</id>
+    <published>2019-07-26T01:06:30.000Z</published>
+    <updated>2019-07-26T01:33:00.760Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;抽象类&quot;&gt;&lt;a href=&quot;#抽象类&quot; class=&quot;headerlink&quot; title=&quot;抽象类&quot;&gt;&lt;/a&gt;抽象类&lt;/h1&gt;&lt;h2 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://ws1119.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JDBC编程</title>
+    <link href="http://ws1119.github.io/2019/07/25/JDBC%E7%BC%96%E7%A8%8B/"/>
+    <id>http://ws1119.github.io/2019/07/25/JDBC编程/</id>
+    <published>2019-07-25T15:57:36.000Z</published>
+    <updated>2019-07-25T16:02:49.945Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JDBC编程&quot;&gt;&lt;a href=&quot;#JDBC编程&quot; class=&quot;headerlink&quot; title=&quot;JDBC编程&quot;&gt;&lt;/a&gt;JDBC编程&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://ws1119.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>I/O流</title>
     <link href="http://ws1119.github.io/2019/07/24/I-O%E6%B5%81/"/>
     <id>http://ws1119.github.io/2019/07/24/I-O流/</id>
     <published>2019-07-24T15:20:12.000Z</published>
-    <updated>2019-07-24T15:53:19.536Z</updated>
+    <updated>2019-07-25T01:08:31.469Z</updated>
     
     <summary type="html">
     

@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="Wusong blog">
 <meta property="og:description" content="I/O流流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作 分类 根据处理数据类型的不同分为：字符流和字节流 根据数据流向不同分为：输入流和输出流 缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-24T15:53:19.536Z">
+<meta property="og:updated_time" content="2019-07-25T01:08:31.469Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="I&#x2F;O流">
 <meta name="twitter:description" content="I/O流流是一组有顺序的，有起点和终点的字节集合，是对数据传输的总称或抽象。即数据在两设备间的传输称为流，流的本质是数据传输，根据数据传输特性将流抽象为各种类，方便更直观的进行数据操作 分类 根据处理数据类型的不同分为：字符流和字节流 根据数据流向不同分为：输入流和输出流 缓冲流也叫高效流，基本原理是，在创建对象时，会创建一个内置的默认大小的缓冲区，通过缓冲区读写，减少系统IO次数，从而提高读写的">
@@ -406,13 +406,23 @@
                 
               
 
-              <time title="创建时间：2019-07-24 23:20:12 / 修改时间：23:53:19" itemprop="dateCreated datePublished" datetime="2019-07-24T23:20:12+08:00">2019-07-24</time>
+              <time title="创建时间：2019-07-24 23:20:12" itemprop="dateCreated datePublished" datetime="2019-07-24T23:20:12+08:00">2019-07-24</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-25 09:08:31" itemprop="dateModified" datetime="2019-07-25T09:08:31+08:00">2019-07-25</time>
+              </span>
             
           
 
@@ -512,6 +522,8 @@
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Buffer_StringStream</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">buffer_RW</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">		BufferedReader br=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(<span class="string">""</span>));</span><br><span class="line">		BufferedWriter bw=<span class="keyword">new</span> BufferedWriter(<span class="keyword">new</span> FileWriter(<span class="string">""</span>));</span><br><span class="line">		String line=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">while</span>((line=br.readLine())!=<span class="keyword">null</span>) &#123;</span><br><span class="line">				System.out.print(line);</span><br><span class="line">				System.out.println(<span class="string">"-----------"</span>);</span><br><span class="line">				bw.write(line);</span><br><span class="line">		&#125;</span><br><span class="line">		br.close();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
+
+
 </li>
 </ul>
 
@@ -578,6 +590,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/25/JDBC编程/" rel="prev" title="JDBC编程">
+                JDBC编程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -649,7 +665,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -681,7 +697,9 @@
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         
       </div>

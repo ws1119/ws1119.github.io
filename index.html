@@ -362,6 +362,821 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/08/09/Web-API/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wusong">
+      <meta itemprop="description" content="热爱学习，，运动">
+      <meta itemprop="image" content="/images/ws.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wusong blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/09/Web-API/" class="post-title-link" itemprop="url">Web API</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-09 19:28:26 / 修改时间：19:33:01" itemprop="dateCreated datePublished" datetime="2019-08-09T19:28:26+08:00">2019-08-09</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Web-API"><a href="#Web-API" class="headerlink" title="Web API"></a>Web API</h1><h2 id="Web-API介绍"><a href="#Web-API介绍" class="headerlink" title="Web API介绍"></a>Web API介绍</h2><h3 id="API的概念"><a href="#API的概念" class="headerlink" title="API的概念"></a>API的概念</h3><p>API（Application Programming Interface,应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。</p>
+<ul>
+<li>任何开发语言都有自己的API</li>
+<li>API的特征输入和输出(I/O)<ul>
+<li>var max =  Math.max(1, 2, 3);</li>
+</ul>
+</li>
+<li>API的使用方法(console.log(‘adf’))</li>
+</ul>
+<h3 id="Web-API的概念"><a href="#Web-API的概念" class="headerlink" title="Web  API的概念"></a>Web  API的概念</h3><p>浏览器提供的一套操作浏览器功能和页面元素的API(BOM和DOM)</p>
+<p>此处的Web API特指浏览器提供的API(一组方法)，Web API在后面的课程中有其它含义</p>
+<h3 id="掌握常见浏览器提供的API的调用方式"><a href="#掌握常见浏览器提供的API的调用方式" class="headerlink" title="掌握常见浏览器提供的API的调用方式"></a>掌握常见浏览器提供的API的调用方式</h3><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API" target="_blank" rel="noopener">MDN-Web API</a></p>
+<h3 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h3><p><img src="C:/Users/%E9%9A%8F%E6%84%8F/Desktop/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/media/QQ%E5%9B%BE%E7%89%8720170810172512-2357176615.png" alt="QQ图片20170810172512"></p>
+<h4 id="ECMAScript-JavaScript的核心"><a href="#ECMAScript-JavaScript的核心" class="headerlink" title="ECMAScript - JavaScript的核心"></a>ECMAScript - JavaScript的核心</h4><p>定义了JavaScript 的语法规范</p>
+<p>JavaScript的核心，描述了语言的基本语法和数据类型，ECMAScript是一套标准，定义了一种语言的标准与具体实现无关</p>
+<h4 id="BOM-浏览器对象模型"><a href="#BOM-浏览器对象模型" class="headerlink" title="BOM - 浏览器对象模型"></a>BOM - 浏览器对象模型</h4><p>一套操作浏览器功能的API</p>
+<p>通过BOM可以操作浏览器窗口，比如：弹出框、控制浏览器跳转、获取分辨率等 </p>
+<h4 id="DOM-文档对象模型"><a href="#DOM-文档对象模型" class="headerlink" title="DOM - 文档对象模型"></a>DOM - 文档对象模型</h4><p>一套操作页面元素的API</p>
+<p>DOM可以把HTML看做是文档树，通过DOM提供的API可以对树上的节点进行操作</p>
+<h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><h3 id="DOM的概念"><a href="#DOM的概念" class="headerlink" title="DOM的概念"></a>DOM的概念</h3><p>文档对象模型（Document Object Model，简称DOM），是<a href="https://baike.baidu.com/item/W3C" target="_blank" rel="noopener">W3C</a>组织推荐的处理<a href="https://baike.baidu.com/item/%E5%8F%AF%E6%89%A9%E5%B1%95%E7%BD%AE%E6%A0%87%E8%AF%AD%E8%A8%80" target="_blank" rel="noopener">可扩展标记语言</a>的标准<a href="https://baike.baidu.com/item/%E7%BC%96%E7%A8%8B%E6%8E%A5%E5%8F%A3" target="_blank" rel="noopener">编程接口</a>。它是一种与平台和语言无关的<a href="https://baike.baidu.com/item/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8E%A5%E5%8F%A3" target="_blank" rel="noopener">应用程序接口</a>(API),它可以动态地访问程序和脚本，更新其内容、结构和<a href="https://baike.baidu.com/item/www/109924" target="_blank" rel="noopener">www</a>文档的风格(目前，HTML和XML文档是通过说明部分定义的)。文档可以进一步被处理，处理的结果可以加入到当前的页面。<a href="https://baike.baidu.com/item/DOM/50288" target="_blank" rel="noopener">DOM</a>是一种基于树的<a href="https://baike.baidu.com/item/API/10154" target="_blank" rel="noopener">API</a>文档，它要求在处理过程中整个文档都表示在<a href="https://baike.baidu.com/item/%E5%AD%98%E5%82%A8%E5%99%A8" target="_blank" rel="noopener">存储器</a>中。</p>
+<p>DOM又称为文档树模型</p>
+<p><img src="C:/Users/%E9%9A%8F%E6%84%8F/Desktop/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/media/1497154623955.png" alt="1497154623955"></p>
+<ul>
+<li>文档：一个网页可以称为文档</li>
+<li>节点：网页中的所有内容都是节点（标签、属性、文本、注释等）</li>
+<li>元素：网页中的标签</li>
+<li>属性：标签的属性</li>
+</ul>
+<h3 id="DOM经常进行的操作"><a href="#DOM经常进行的操作" class="headerlink" title="DOM经常进行的操作"></a>DOM经常进行的操作</h3><ul>
+<li>获取元素</li>
+<li>对元素进行操作(设置其属性或调用其方法)</li>
+<li>动态创建元素</li>
+<li>事件(什么时机做相应的操作)</li>
+</ul>
+<h2 id="获取页面元素"><a href="#获取页面元素" class="headerlink" title="获取页面元素"></a>获取页面元素</h2><h3 id="为什么要获取页面元素"><a href="#为什么要获取页面元素" class="headerlink" title="为什么要获取页面元素"></a>为什么要获取页面元素</h3><p>例如：我们想要操作页面上的某部分(显示/隐藏，动画)，需要先获取到该部分对应的元素，才进行后续操作</p>
+<h3 id="根据id获取元素"><a href="#根据id获取元素" class="headerlink" title="根据id获取元素"></a>根据id获取元素</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.getElementById(<span class="string">'main'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(div);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取到的数据类型 HTMLDivElement，对象都是有类型的</span></span><br></pre></td></tr></table></figure>
+
+<p>注意：由于id名具有唯一性，部分浏览器支持直接使用id名访问元素，但不是标准方式，不推荐使用。</p>
+<h3 id="根据标签名获取元素"><a href="#根据标签名获取元素" class="headerlink" title="根据标签名获取元素"></a>根据标签名获取元素</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> divs = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; divs.length; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> div = divs[i];</span><br><span class="line">  <span class="built_in">console</span>.log(div);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="根据name获取元素"><a href="#根据name获取元素" class="headerlink" title="根据name获取元素*"></a>根据name获取元素*</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> inputs = <span class="built_in">document</span>.getElementsByName(<span class="string">'hobby'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; inputs.length; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> input = inputs[i];</span><br><span class="line">  <span class="built_in">console</span>.log(input);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="根据类名获取元素"><a href="#根据类名获取元素" class="headerlink" title="根据类名获取元素*"></a>根据类名获取元素*</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mains = <span class="built_in">document</span>.getElementsByClassName(<span class="string">'main'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; mains.length; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> main = mains[i];</span><br><span class="line">  <span class="built_in">console</span>.log(main);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="根据选择器获取元素"><a href="#根据选择器获取元素" class="headerlink" title="根据选择器获取元素*"></a>根据选择器获取元素*</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> text = <span class="built_in">document</span>.querySelector(<span class="string">'#text'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(text);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> boxes = <span class="built_in">document</span>.querySelectorAll(<span class="string">'.box'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; boxes.length; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> box = boxes[i];</span><br><span class="line">  <span class="built_in">console</span>.log(box);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>总结</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">掌握</span><br><span class="line">	getElementById()</span><br><span class="line">	getElementsByTagName()</span><br><span class="line">了解</span><br><span class="line">	getElementsByName()</span><br><span class="line">	getElementsByClassName()</span><br><span class="line">	querySelector()</span><br><span class="line">	querySelectorAll()</span><br></pre></td></tr></table></figure>
+
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>事件：触发-响应机制</p>
+<h3 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h3><ul>
+<li>事件源:触发(被)事件的元素</li>
+<li>事件名称: click 点击事件</li>
+<li>事件处理程序:事件触发后要执行的代码(函数形式)</li>
+</ul>
+<h3 id="事件的基本使用"><a href="#事件的基本使用" class="headerlink" title="事件的基本使用"></a>事件的基本使用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'代码会在box被点击后执行'</span>);  </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><ul>
+<li>点击按钮弹出提示框</li>
+<li>点击按钮切换图片</li>
+</ul>
+<h2 id="属性操作"><a href="#属性操作" class="headerlink" title="属性操作"></a>属性操作</h2><h3 id="非表单元素的属性"><a href="#非表单元素的属性" class="headerlink" title="非表单元素的属性"></a>非表单元素的属性</h3><p>href、title、id、src、className</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> link = <span class="built_in">document</span>.getElementById(<span class="string">'link'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(link.href);</span><br><span class="line"><span class="built_in">console</span>.log(link.title);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pic = <span class="built_in">document</span>.getElementById(<span class="string">'pic'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(pic.src);</span><br></pre></td></tr></table></figure>
+
+<p>案例：</p>
+<p>​    点击按钮显示隐藏div</p>
+<p>​    美女相册</p>
+<ul>
+<li>innerHTML和innerText</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.innerHTML = <span class="string">'我是文本&lt;p&gt;我会生成为标签&lt;/p&gt;'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(box.innerHTML);</span><br><span class="line">box.innerText = <span class="string">'我是文本&lt;p&gt;我不会生成为标签&lt;/p&gt;'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(box.innerText);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>HTML转义符</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;		&amp;quot;</span><br><span class="line">&apos;		&amp;apos;</span><br><span class="line">&amp;		&amp;amp;</span><br><span class="line">&lt;		&amp;lt;   // less than  小于</span><br><span class="line">&gt;		&amp;gt;   // greater than  大于</span><br><span class="line">空格	   &amp;nbsp;</span><br><span class="line">©		&amp;copy;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>innerHTML和innerText的区别</li>
+<li>innerText的兼容性处理</li>
+</ul>
+<h3 id="表单元素属性"><a href="#表单元素属性" class="headerlink" title="表单元素属性"></a>表单元素属性</h3><ul>
+<li>value 用于大部分表单元素的内容获取(option除外)</li>
+<li>type 可以获取input标签的类型(输入框或复选框等)</li>
+<li>disabled 禁用属性</li>
+<li>checked 复选框选中属性</li>
+<li>selected 下拉菜单选中属性</li>
+</ul>
+<h3 id="案例-1"><a href="#案例-1" class="headerlink" title="案例"></a>案例</h3><ul>
+<li>点击按钮禁用文本框</li>
+<li>给文本框赋值，获取文本框的值</li>
+<li>检测用户名是否是3-6位，密码是否是6-8位，如果不满足要求高亮显示文本框</li>
+<li>设置下拉框中的选中项</li>
+<li>搜索文本框</li>
+<li>全选反选</li>
+</ul>
+<h3 id="自定义属性操作"><a href="#自定义属性操作" class="headerlink" title="自定义属性操作"></a>自定义属性操作</h3><ul>
+<li>getAttribute() 获取标签行内属性</li>
+<li>setAttribute() 设置标签行内属性</li>
+<li>removeAttribute() 移除标签行内属性</li>
+<li>与element.属性的区别: 上述三个方法用于获取任意的行内属性。</li>
+</ul>
+<h3 id="样式操作"><a href="#样式操作" class="headerlink" title="样式操作"></a>样式操作</h3><ul>
+<li>使用style方式设置的样式显示在标签行内</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.style.width = <span class="string">'100px'</span>;</span><br><span class="line">box.style.height = <span class="string">'100px'</span>;</span><br><span class="line">box.style.backgroundColor = <span class="string">'red'</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>注意</p>
+<p>通过样式属性设置宽高、位置的属性类型是字符串，需要加上px</p>
+</li>
+</ul>
+<h3 id="类名操作"><a href="#类名操作" class="headerlink" title="类名操作"></a>类名操作</h3><ul>
+<li>修改标签的className属性相当于直接修改标签的类名</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.className = <span class="string">'show'</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="案例-2"><a href="#案例-2" class="headerlink" title="案例"></a>案例</h3><ul>
+<li>开关灯</li>
+<li>点击按钮变色</li>
+<li>图片切换二维码案例</li>
+<li>当前输入的文本框高亮显示</li>
+<li>点击按钮改变div的大小和位置</li>
+<li>列表隔行变色、高亮显示</li>
+<li>京东商品展示</li>
+<li>tab选项卡切换</li>
+</ul>
+<h2 id="创建元素的三种方式"><a href="#创建元素的三种方式" class="headerlink" title="创建元素的三种方式"></a>创建元素的三种方式</h2><h3 id="document-write"><a href="#document-write" class="headerlink" title="document.write()"></a>document.write()</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.write(<span class="string">'新设置的内容&lt;p&gt;标签也可以生成&lt;/p&gt;'</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="innerHTML"><a href="#innerHTML" class="headerlink" title="innerHTML"></a>innerHTML</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.innerHTML = <span class="string">'新内容&lt;p&gt;新标签&lt;/p&gt;'</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="document-createElement"><a href="#document-createElement" class="headerlink" title="document.createElement()"></a>document.createElement()</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line"><span class="built_in">document</span>.body.appendChild(div);</span><br></pre></td></tr></table></figure>
+
+<h3 id="性能问题"><a href="#性能问题" class="headerlink" title="性能问题"></a>性能问题</h3><ul>
+<li>innerHTML方法由于会对字符串进行解析，需要避免在循环内多次使用。</li>
+<li>可以借助字符串或数组的方式进行替换，再设置给innerHTML</li>
+<li>优化后与document.createElement性能相近</li>
+</ul>
+<h3 id="案例-3"><a href="#案例-3" class="headerlink" title="案例"></a>案例</h3><ul>
+<li>动态创建列表，高亮显示</li>
+<li>根据数据动态创建表格</li>
+<li>模拟百度搜索文本框</li>
+</ul>
+<h2 id="节点操作"><a href="#节点操作" class="headerlink" title="节点操作"></a>节点操作</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> body = <span class="built_in">document</span>.body;</span><br><span class="line"><span class="keyword">var</span> div = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</span><br><span class="line">body.appendChild(div);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> firstEle = body.children[<span class="number">0</span>];</span><br><span class="line">body.insertBefore(div, firstEle);</span><br><span class="line"></span><br><span class="line">body.removeChild(firstEle);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> text = <span class="built_in">document</span>.createElement(<span class="string">'p'</span>);</span><br><span class="line">body.replaceChild(text, div);</span><br></pre></td></tr></table></figure>
+
+<p>案例：</p>
+<p>​    权限选择</p>
+<h3 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a>节点属性</h3><h3 id="模拟文档树结构"><a href="#模拟文档树结构" class="headerlink" title="模拟文档树结构"></a>模拟文档树结构</h3><p><img src="C:/Users/%E9%9A%8F%E6%84%8F/Desktop/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/media/1497165666684.png" alt="1497165666684"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Element</span>(<span class="params">option</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.id = option.id || <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">this</span>.nodeName = option.nodeName || <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">this</span>.nodeValue = option.nodeValue || <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">this</span>.nodeType = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">this</span>.children = option.children || [];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> doc = <span class="keyword">new</span> Element(&#123;</span><br><span class="line">  nodeName: <span class="string">'html'</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> head = <span class="keyword">new</span> Element(&#123;</span><br><span class="line">  nodeName: <span class="string">'head'</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> body = <span class="keyword">new</span> Element(&#123;</span><br><span class="line">  nodeName: <span class="string">'body'</span></span><br><span class="line">&#125;)</span><br><span class="line">doc.children.push(head);</span><br><span class="line">doc.children.push(body);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> div = <span class="keyword">new</span> Element(&#123;</span><br><span class="line">  nodeName: <span class="string">'div'</span>,</span><br><span class="line">  nodeValue: <span class="string">'haha'</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Element(&#123;</span><br><span class="line">  nodeName: <span class="string">'p'</span>,</span><br><span class="line">  nodeValue: <span class="string">'段落'</span></span><br><span class="line">&#125;)</span><br><span class="line">body.children.push(div);</span><br><span class="line">body.children.push(p);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getChildren</span>(<span class="params">ele</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; ele.children.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> child = ele.children[i];</span><br><span class="line">    <span class="built_in">console</span>.log(child.nodeName);</span><br><span class="line">    getChildren(child);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">getChildren(doc);</span><br></pre></td></tr></table></figure>
+
+<h3 id="节点层级"><a href="#节点层级" class="headerlink" title="节点层级"></a>节点层级</h3><p>重点讲父子属性，兄弟属性画图讲解 </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(box.parentNode);</span><br><span class="line"><span class="built_in">console</span>.log(box.childNodes);</span><br><span class="line"><span class="built_in">console</span>.log(box.children);</span><br><span class="line"><span class="built_in">console</span>.log(box.nextSibling);</span><br><span class="line"><span class="built_in">console</span>.log(box.previousSibling);</span><br><span class="line"><span class="built_in">console</span>.log(box.firstChild);</span><br><span class="line"><span class="built_in">console</span>.log(box.lastChild);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>注意</p>
+<p>childNodes和children的区别，childNodes获取的是子节点，children获取的是子元素</p>
+<p>nextSibling和previousSibling获取的是节点，获取元素对应的属性是nextElementSibling和previousElementSibling获取的是元素</p>
+<p>​    nextElementSibling和previousElementSibling有兼容性问题，IE9以后才支持</p>
+</li>
+<li><p>总结</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">节点操作，方法</span><br><span class="line">	appendChild()</span><br><span class="line">	insertBefore()</span><br><span class="line">	removeChild()</span><br><span class="line">	replaceChild()</span><br><span class="line">节点层次，属性</span><br><span class="line">	parentNode</span><br><span class="line">	childNodes</span><br><span class="line">	children</span><br><span class="line">	nextSibling/previousSibling</span><br><span class="line">	firstChild/lastChild</span><br></pre></td></tr></table></figure>
+
+<h2 id="事件详解"><a href="#事件详解" class="headerlink" title="事件详解"></a>事件详解</h2><h3 id="注册-移除事件的三种方式"><a href="#注册-移除事件的三种方式" class="headerlink" title="注册/移除事件的三种方式"></a>注册/移除事件的三种方式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">box.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'点击后执行'</span>);</span><br><span class="line">&#125;;</span><br><span class="line">box.onclick = <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">box.addEventListener(<span class="string">'click'</span>, eventCode, <span class="literal">false</span>);</span><br><span class="line">box.removeEventListener(<span class="string">'click'</span>, eventCode, <span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">box.attachEvent(<span class="string">'onclick'</span>, eventCode);</span><br><span class="line">box.detachEvent(<span class="string">'onclick'</span>, eventCode);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">eventCode</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'点击后执行'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="兼容代码"><a href="#兼容代码" class="headerlink" title="兼容代码"></a>兼容代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addEventListener</span>(<span class="params">element, type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (element.addEventListener) &#123;</span><br><span class="line">    element.addEventListener(type, fn, <span class="literal">false</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (element.attachEvent)&#123;</span><br><span class="line">    element.attachEvent(<span class="string">'on'</span> + type,fn);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    element[<span class="string">'on'</span>+type] = fn;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeEventListener</span>(<span class="params">element, type, fn</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (element.removeEventListener) &#123;</span><br><span class="line">    element.removeEventListener(type, fn, <span class="literal">false</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> <span class="keyword">if</span> (element.detachEvent) &#123;</span><br><span class="line">    element.detachEvent(<span class="string">'on'</span> + type, fn);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    element[<span class="string">'on'</span>+type] = <span class="literal">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="事件的三个阶段"><a href="#事件的三个阶段" class="headerlink" title="事件的三个阶段"></a>事件的三个阶段</h3><ol>
+<li><p>捕获阶段</p>
+</li>
+<li><p>当前目标阶段</p>
+</li>
+<li><p>冒泡阶段</p>
+<p>事件对象.eventPhase属性可以查看事件触发时所处的阶段</p>
+</li>
+</ol>
+<h3 id="事件对象的属性和方法"><a href="#事件对象的属性和方法" class="headerlink" title="事件对象的属性和方法"></a>事件对象的属性和方法</h3><ul>
+<li>event.type 获取事件类型</li>
+<li>clientX/clientY     所有浏览器都支持，窗口位置</li>
+<li>pageX/pageY       IE8以前不支持，页面位置</li>
+<li>event.target || event.srcElement 用于获取触发事件的元素</li>
+<li>event.preventDefault() 取消默认行为</li>
+</ul>
+<h4 id="案例-4"><a href="#案例-4" class="headerlink" title="案例"></a>案例</h4><ul>
+<li>跟着鼠标飞的天使</li>
+<li>鼠标点哪图片飞到哪里</li>
+<li>获取鼠标在div内的坐标</li>
+</ul>
+<h3 id="阻止事件传播的方式"><a href="#阻止事件传播的方式" class="headerlink" title="阻止事件传播的方式"></a>阻止事件传播的方式</h3><ul>
+<li>标准方式 event.stopPropagation();</li>
+<li>IE低版本 event.cancelBubble = true; 标准中已废弃</li>
+</ul>
+<h3 id="常用的鼠标和键盘事件"><a href="#常用的鼠标和键盘事件" class="headerlink" title="常用的鼠标和键盘事件"></a>常用的鼠标和键盘事件</h3><ul>
+<li>onmouseup 鼠标按键放开时触发</li>
+<li>onmousedown 鼠标按键按下触发</li>
+<li>onmousemove 鼠标移动触发</li>
+<li>onkeyup 键盘按键按下触发</li>
+<li>onkeydown 键盘按键抬起触发</li>
+</ul>
+<h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><h3 id="BOM的概念"><a href="#BOM的概念" class="headerlink" title="BOM的概念"></a>BOM的概念</h3><p>BOM(Browser Object Model) 是指浏览器对象模型，浏览器对象模型提供了独立于内容的、可以与浏览器窗口进行互动的对象结构。BOM由多个对象组成，其中代表浏览器窗口的Window对象是BOM的顶层对象，其他对象都是该对象的子对象。</p>
+<p>我们在浏览器中的一些操作都可以使用BOM的方式进行编程处理，</p>
+<p>比如：刷新浏览器、后退、前进、在浏览器中输入URL等</p>
+<h3 id="BOM的顶级对象window"><a href="#BOM的顶级对象window" class="headerlink" title="BOM的顶级对象window"></a>BOM的顶级对象window</h3><p>window是浏览器的顶级对象，当调用window下的属性和方法时，可以省略window<br>注意：window下一个特殊的属性 window.name</p>
+<h3 id="对话框"><a href="#对话框" class="headerlink" title="对话框"></a>对话框</h3><ul>
+<li>alert()</li>
+<li>prompt()</li>
+<li>confirm()</li>
+</ul>
+<h3 id="页面加载事件"><a href="#页面加载事件" class="headerlink" title="页面加载事件"></a>页面加载事件</h3><ul>
+<li>onload</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 当页面加载完成执行</span></span><br><span class="line">  <span class="comment">// 当页面完全加载所有内容（包括图像、脚本文件、CSS 文件等）执行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>onunload</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onunload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 当用户退出页面时执行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h3><h4 id="setTimeout-和clearTimeout"><a href="#setTimeout-和clearTimeout" class="headerlink" title="setTimeout()和clearTimeout()"></a>setTimeout()和clearTimeout()</h4><p>在指定的毫秒数到达之后执行指定的函数，只执行一次</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个定时器，1000毫秒后执行，返回定时器的标示</span></span><br><span class="line"><span class="keyword">var</span> timerId = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'Hello World'</span>);</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 取消定时器的执行</span></span><br><span class="line">clearTimeout(timerId);</span><br></pre></td></tr></table></figure>
+
+<h4 id="setInterval-和clearInterval"><a href="#setInterval-和clearInterval" class="headerlink" title="setInterval()和clearInterval()"></a>setInterval()和clearInterval()</h4><p>定时调用的函数，可以按照给定的时间(单位毫秒)周期调用函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个定时器，每隔1秒调用一次</span></span><br><span class="line"><span class="keyword">var</span> timerId = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">  <span class="built_in">console</span>.log(date.toLocaleTimeString());</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 取消定时器的执行</span></span><br><span class="line">clearInterval(timerId);</span><br></pre></td></tr></table></figure>
+
+<h3 id="location对象"><a href="#location对象" class="headerlink" title="location对象"></a>location对象</h3><p>location对象是window对象下的一个属性，时候的时候可以省略window对象</p>
+<p>location可以获取或者设置浏览器地址栏的URL</p>
+<h4 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h4><p>统一资源定位符 (Uniform Resource Locator, URL)</p>
+<ul>
+<li>URL的组成</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">scheme://host:port/path?query#fragment</span><br><span class="line">scheme:通信协议</span><br><span class="line">	常用的http,ftp,maito等</span><br><span class="line">host:主机</span><br><span class="line">	服务器(计算机)域名系统 (DNS) 主机名或 IP 地址。</span><br><span class="line">port:端口号</span><br><span class="line">	整数，可选，省略时使用方案的默认端口，如http的默认端口为80。</span><br><span class="line">path:路径</span><br><span class="line">	由零或多个&apos;/&apos;符号隔开的字符串，一般用来表示主机上的一个目录或文件地址。</span><br><span class="line">query:查询</span><br><span class="line">	可选，用于给动态网页传递参数，可有多个参数，用&apos;&amp;&apos;符号隔开，每个参数的名和值用&apos;=&apos;符号隔开。例如：name=zs</span><br><span class="line">fragment:信息片断</span><br><span class="line">	字符串，锚点.</span><br></pre></td></tr></table></figure>
+
+<h4 id="location有哪些成员？"><a href="#location有哪些成员？" class="headerlink" title="location有哪些成员？"></a>location有哪些成员？</h4><ul>
+<li><p>使用chrome的控制台查看</p>
+</li>
+<li><p>查MDN</p>
+<p><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN</a></p>
+</li>
+<li><p>成员</p>
+<ul>
+<li>assign()/reload()/replace()</li>
+<li>hash/host/hostname/search/href……</li>
+</ul>
+</li>
+</ul>
+<h4 id="案例-5"><a href="#案例-5" class="headerlink" title="案例"></a>案例</h4><p>解析URL中的query，并返回对象的形式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getQuery</span>(<span class="params">queryStr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> query = &#123;&#125;;</span><br><span class="line">  <span class="keyword">if</span> (queryStr.indexOf(<span class="string">'?'</span>) &gt; <span class="number">-1</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> index = queryStr.indexOf(<span class="string">'?'</span>);</span><br><span class="line">    queryStr = queryStr.substr(index + <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">var</span> array = queryStr.split(<span class="string">'&amp;'</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">      <span class="keyword">var</span> tmpArr = array[i].split(<span class="string">'='</span>);</span><br><span class="line">      <span class="keyword">if</span> (tmpArr.length === <span class="number">2</span>) &#123;</span><br><span class="line">        query[tmpArr[<span class="number">0</span>]] = tmpArr[<span class="number">1</span>];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> query;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(getQuery(location.search));</span><br><span class="line"><span class="built_in">console</span>.log(getQuery(location.href));</span><br></pre></td></tr></table></figure>
+
+<h3 id="history对象"><a href="#history对象" class="headerlink" title="history对象"></a>history对象</h3><ul>
+<li>back()</li>
+<li>forward()</li>
+<li>go()</li>
+</ul>
+<h3 id="navigator对象"><a href="#navigator对象" class="headerlink" title="navigator对象"></a>navigator对象</h3><ul>
+<li>userAgent</li>
+</ul>
+<p>通过userAgent可以判断用户浏览器的类型</p>
+<ul>
+<li>platform</li>
+</ul>
+<p>通过platform可以判断浏览器所在的系统平台类型.</p>
+<h2 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h2><h3 id="偏移量"><a href="#偏移量" class="headerlink" title="偏移量"></a>偏移量</h3><ul>
+<li>offsetParent用于获取定位的父级元素</li>
+<li>offsetParent和parentNode的区别</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(box.offsetParent);</span><br><span class="line"><span class="built_in">console</span>.log(box.offsetLeft);</span><br><span class="line"><span class="built_in">console</span>.log(box.offsetTop);</span><br><span class="line"><span class="built_in">console</span>.log(box.offsetWidth);</span><br><span class="line"><span class="built_in">console</span>.log(box.offsetHeight);</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:/Users/%E9%9A%8F%E6%84%8F/Desktop/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/media/1498743216279.png" alt="1498743216279"></p>
+<h3 id="客户区大小"><a href="#客户区大小" class="headerlink" title="客户区大小"></a>客户区大小</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(box.clientLeft);</span><br><span class="line"><span class="built_in">console</span>.log(box.clientTop);</span><br><span class="line"><span class="built_in">console</span>.log(box.clientWidth);</span><br><span class="line"><span class="built_in">console</span>.log(box.clientHeight);</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:/Users/%E9%9A%8F%E6%84%8F/Desktop/%E6%88%91%E7%9A%84%E7%AC%94%E8%AE%B0/media/1498743269100.png" alt="1498743269100"></p>
+<h3 id="滚动偏移"><a href="#滚动偏移" class="headerlink" title="滚动偏移"></a>滚动偏移</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box = <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(box.scrollLeft)</span><br><span class="line"><span class="built_in">console</span>.log(box.scrollTop)</span><br><span class="line"><span class="built_in">console</span>.log(box.scrollWidth)</span><br><span class="line"><span class="built_in">console</span>.log(box.scrollHeight)</span><br></pre></td></tr></table></figure>
+
+<p><img src alt="1498743288621"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <div>
+  
+</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/26/抽象类/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wusong">
+      <meta itemprop="description" content="热爱学习，，运动">
+      <meta itemprop="image" content="/images/ws.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wusong blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/26/抽象类/" class="post-title-link" itemprop="url">抽象类</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-26 09:06:30 / 修改时间：09:33:00" itemprop="dateCreated datePublished" datetime="2019-07-26T09:06:30+08:00">2019-07-26</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>包含抽象方法的类：通常在有继承关系的类之间，父类对子类的行为没有强制的约束，但是有时候要求子类必须实现父类的方法，这时抽象类可以实现</p>
+<p><strong>抽象类</strong>:在类的基础上定义了抽象方法的类，抽象方法是指用abstract修饰的方法，没有方法体{}</p>
+<p><strong>抽象方法：</strong>使用abstract关键字修饰的方法，抽象方法只包含有一个方法名，不包含方法体。定义格式：修饰符 abstract 返回值类型 方法名（参数列表）</p>
+<p>一个类汇中如果包含抽象方法，那么这个类必须是抽象类</p>
+<p>抽象类的基本定义：</p>
+<ol>
+<li>抽象类不能用final修饰，抽象类中可以有：普通方法、静态方法、抽象方法</li>
+<li>抽象类中可以有构造方法，如果在抽象父类中，明确定义了有参的构造方法，子类要使用父类的构造方法，父类是抽象类，不能被实例化必须用super（）去调用</li>
+<li>抽象类中允许没有任何的抽象方法定义，只要类有abstract修饰，一样抽象类也不能直接别实例化</li>
+<li>如果要一个类（他要求有完整的功能定义），但他又不能直接被使用，他必须有子类才能使用</li>
+<li>子类对象在实例化之前，一定要先调用父类构造，在调用子类构造</li>
+</ol>
+<h2 id="抽象类使用"><a href="#抽象类使用" class="headerlink" title="抽象类使用"></a>抽象类使用</h2><p>向上自动转型，把一个子类的类型可以转化成一个父类的类型</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">抽象模板父类：行为的抽象，不同的子类可以表现不同的行为：</span><br><span class="line">抽象模板父类：</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> EAT = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> SLEEP = <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> WORK = <span class="number">3</span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">command</span><span class="params">(<span class="keyword">int</span> cmd)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">switch</span> (cmd) &#123;</span><br><span class="line">		<span class="keyword">case</span> EAT :</span><br><span class="line">			<span class="keyword">this</span>.eat();</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> SLEEP :</span><br><span class="line">			<span class="keyword">this</span>.sleep();</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> WORK:</span><br><span class="line">			<span class="keyword">this</span>.work();</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> EAT + SLEEP + WORK:</span><br><span class="line">			<span class="keyword">this</span>.eat();</span><br><span class="line">			<span class="keyword">this</span>.sleep();</span><br><span class="line">			<span class="keyword">this</span>.work();</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">sleep</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">work</span><span class="params">()</span></span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">子类二：</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pig</span> <span class="keyword">extends</span> <span class="title">AbstractModul</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"猪在抢食"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sleep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"猪在睡觉"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">work</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"猪不工作"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">子类三：</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Robat</span> <span class="keyword">extends</span> <span class="title">AbstractModul</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">eat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"机器人在加油"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sleep</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"机器人不睡觉"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">work</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"机器人在打工"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="抽象类使用原则"><a href="#抽象类使用原则" class="headerlink" title="抽象类使用原则"></a>抽象类使用原则</h2><ol>
+<li>抽象类本身不完善，就是一个半成品，不能直接实例化对象；抽象类必须有子类来继承</li>
+<li>子类如果不是抽象类，他必须复写中抽象类中的全部抽象方法</li>
+<li>抽象类可以依靠子类的对象向上转型实现实例化对象定义，即调用到被子类复写的方法为啥不能被实例化：当类比赛实例化对象时，需要有分配内存空间，同时该对象可以调用类中的方法，但是抽象方法是没有方法体的，所以无法调用；</li>
+</ol>
+<p>总结：在设计中，如果必须强制子类重写的方法就调用抽象方法定义，就能做出父类标准</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <div>
+  
+</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/25/JDBC编程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wusong">
+      <meta itemprop="description" content="热爱学习，，运动">
+      <meta itemprop="image" content="/images/ws.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wusong blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/07/25/JDBC编程/" class="post-title-link" itemprop="url">JDBC编程</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-25 23:57:36" itemprop="dateCreated datePublished" datetime="2019-07-25T23:57:36+08:00">2019-07-25</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-26 00:02:49" itemprop="dateModified" datetime="2019-07-26T00:02:49+08:00">2019-07-26</time>
+              </span>
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="JDBC编程"><a href="#JDBC编程" class="headerlink" title="JDBC编程"></a>JDBC编程</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>jdbc是java数据库连接(Java DataBase connnectivity)技术的简称，由一组使用java语言编写的类和接口组成，可以为多种数据库提供统一访问</p>
+<h3 id="Driver接口"><a href="#Driver接口" class="headerlink" title="Driver接口"></a>Driver接口</h3><p>又数据库厂家提供</p>
+<h3 id="导包"><a href="#导包" class="headerlink" title="导包"></a>导包</h3><p>在编程中要连接数据库，就必须先装载数据库驱动程序，不同数据库有不同的装载方法：</p>
+<ul>
+<li>Mysql:Class.forName(“com.mysql.jdbc.Driver”)</li>
+<li>Oralce:Class.forName(“oracle.jdbc.driver.OracleDriver”)</li>
+<li>SQL Server:Class.forName(“com.microsoft.jdbc.sqlserver.SQLServerDriver”)</li>
+<li>sybase:Class.forName(“com.sybase.jdbc.sybDriver”)</li>
+</ul>
+<h3 id="驱动管理-DriverManager接口"><a href="#驱动管理-DriverManager接口" class="headerlink" title="驱动管理(DriverManager接口)"></a>驱动管理(DriverManager接口)</h3><p>是Jdbc的管理层，作用于用户和驱动之间。程序使用该类书要是用于获取collection对象</p>
+<h3 id="连接接口-collection接口和DriverManager接口创建"><a href="#连接接口-collection接口和DriverManager接口创建" class="headerlink" title="连接接口(collection接口和DriverManager接口创建)"></a>连接接口(collection接口和DriverManager接口创建)</h3><p>collection接口连接数据库，在连接上下文中执行SQL语句并返回结果</p>
+<p>collection代表数据库连接对象，每一个collection代表一个物理连接会话，想要访问数据库就必须先的到数据库连接</p>
+<p>Java中几种常见数据库连接方法：</p>
+<p>oracle：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">private static final String driver=&quot;oracle.jdbc.driver.OracleDriver&quot;//连接oracle的驱动程序类</span><br><span class="line">private static final url=&quot;jdbc:oracle:thin:@i地址:1521:orcl&quot;//连接oracle的连接字符串</span><br><span class="line">private static final user=&quot;scott&quot;//登录数据库用户名</span><br><span class="line">private static final password=&quot;tiger&quot;//登录库密码</span><br></pre></td></tr></table></figure>
+
+<p>MySQL:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String Dirver=<span class="string">"com.mysql.jdbc.Driver"</span>;<span class="comment">//驱动程序</span></span><br><span class="line">String URL=<span class="string">"jdbc:mysql://localhost:3306/db_name"</span>;  <span class="comment">//连接的URL,db_name为数据库名</span></span><br><span class="line">String UserName=<span class="string">"username"</span>;  <span class="comment">//用户名</span></span><br><span class="line">String Password=<span class="string">"password"</span>;  <span class="comment">//密码</span></span><br><span class="line">Class.forName(Driver).newInstance();  <span class="comment">//加载数据库驱动</span></span><br></pre></td></tr></table></figure>
+
+<p> Microsoft SQL server:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String Driver=<span class="string">"com.microsoft.jdbc.sqlserver.SQLServerDriver"</span>;  <span class="comment">//驱动程序</span></span><br><span class="line">String URL=<span class="string">"jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=db_name"</span>; </span><br><span class="line"><span class="comment">//连接的URL,db_name为数据库</span></span><br><span class="line">String UserName=<span class="string">"username"</span>;  <span class="comment">//用户名</span></span><br><span class="line">String Password=<span class="string">"password"</span>;  <span class="comment">//密码</span></span><br><span class="line">Class.forName(Driver).newInstance();</span><br><span class="line">connection con=DriverManager.getConnection(URL,Username,Password);</span><br></pre></td></tr></table></figure>
+
+<p>sybase:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String Driver=<span class="string">"com.sybase.jdbc.sybDriver"</span>;  <span class="comment">//驱动程序</span></span><br><span class="line">String URL=<span class="string">"jdbc:Sybase://localhost:5007/db_name"</span>; <span class="comment">//连接的URL,db_name为数据库</span></span><br><span class="line">String UserName=<span class="string">"username"</span>;  <span class="comment">//用户名 </span></span><br><span class="line">String Password=<span class="string">"password"</span>;  <span class="comment">//密码</span></span><br><span class="line">Class.forName(Driver).newInstance();</span><br></pre></td></tr></table></figure>
+
+<h2 id="JDBC编程实现步骤"><a href="#JDBC编程实现步骤" class="headerlink" title="JDBC编程实现步骤"></a>JDBC编程实现步骤</h2><p>加载数据库驱动，通常使用Class类的forName静态方法来加载驱动</p>
+<p>Class.foName(driverclass),driverclass就是数据库驱动类所对应的的字符串</p>
+<p>通过DriverManager获取数据库连接</p>
+<p>查询数据库，取得结果集</p>
+<p>数据库的执行数据库的增、删、改</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DBHElper</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> Connection con = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> Statement ss = <span class="keyword">null</span>;<span class="comment">// 编译对象</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> PreparedStatement ps = <span class="keyword">null</span>;<span class="comment">// 预编译对象</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span>  ResultSet rs = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String driver = <span class="string">"oracle.jdbc.driver.OracleDriver"</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String url = <span class="string">"jdbc:oracle:thin:@192.168.64.128:1521:orcl"</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String user = <span class="string">"scott"</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String password = <span class="string">"tiger"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">static</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// 1.加载数据库驱动，通过Class类的forName()静态方法</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Class.forName(driver);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"加载数据库驱动失败"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Title</span>: getConnection   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Description</span>: TODO(取得数据库连接)   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@return</span>      </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span>: Connection 数据库连接对象      </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> DriverManager.getConnection(url, user, password);</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			System.out.println(<span class="string">"取得数据库连接失败"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Title</span>: execute   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Description</span>: TODO(执行查询)   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> sql SQL语句</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> paraments 参数数组</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> con 数据库连接对象</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@return</span>      </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span>: ResultSet       结果集</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="comment">// 查询数据库，取得结果集：ResultSet</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ResultSet <span class="title">execute</span><span class="params">(String sql, Object[] paraments,Connection con)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 创建一个预编译对象</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			con=getConnection();</span><br><span class="line">			ps = con.prepareStatement(sql);</span><br><span class="line">			<span class="keyword">if</span> (paraments != <span class="keyword">null</span>) &#123;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; paraments.length; i++) &#123;</span><br><span class="line">					<span class="comment">// 给预编译对象中的SQL语句添加参数</span></span><br><span class="line">					ps.setObject(i + <span class="number">1</span>, paraments[i]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">// 执行查询取得数据库数据</span></span><br><span class="line">			rs = ps.executeQuery();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;<span class="comment">//此处不能关闭数据库连接，用完数据请关闭连接</span></span><br><span class="line">		<span class="keyword">return</span> rs;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Title</span>: execute1   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@Description</span>: TODO(数据库的执行数据的增、删、改)   </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> sql SQL语句</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> paraments 参数数组</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@param</span> con 数据库连接对象</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span>: <span class="doctag">@return</span>      </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span>: int      影响表中的行数</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span></span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">execute1</span><span class="params">(String sql, Object[] paraments, Connection con)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// 影响的行数</span></span><br><span class="line">		<span class="keyword">int</span> rows = -<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			ps = con.prepareStatement(sql);</span><br><span class="line">			<span class="keyword">if</span> (paraments != <span class="keyword">null</span>) &#123;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; paraments.length; i++) &#123;</span><br><span class="line">					<span class="comment">// 给预编译对象中的SQL语句添加参数</span></span><br><span class="line">					ps.setObject(i + <span class="number">1</span>, paraments[i]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">// 执行更新返回影响数据表的行数</span></span><br><span class="line">			rows = ps.executeUpdate();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				ps.close();</span><br><span class="line">				con.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (Exception e2) &#123;</span><br><span class="line">				e2.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> rows;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		select();</span><br><span class="line">		updatedelete();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span>  <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">select</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="comment">//取得连接对象</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//TestJDBC.testStatement(con);</span></span><br><span class="line">		<span class="comment">// 查询数据库////////////////////////////////////测试preparedStatementer的查询功能///////////////////////////////////////</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//在DBhelper类的外部随时可以取得数据库连接</span></span><br><span class="line">		Connection con = DBHElper.getConnection();</span><br><span class="line">		String sql=<span class="string">"select *from emp "</span>;</span><br><span class="line">		<span class="comment">//Object[] paraments = new Object[] &#123;7369&#125;;</span></span><br><span class="line">		ResultSet rs=DBHElper.execute(sql, <span class="keyword">null</span>,con);</span><br><span class="line">		<span class="comment">//遍历结果集</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			Emp empObj = <span class="keyword">null</span>;</span><br><span class="line">			List&lt;Emp&gt; emps =<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">			<span class="keyword">while</span>(rs.next()) &#123;</span><br><span class="line">				<span class="comment">//从结果集去取出数据，按照sql语句中列的顺序一次去除，注意表中每一列的数据类型必须与java代码中接受的类型保持一致</span></span><br><span class="line">				<span class="comment">/*Integer empNo = rs.getInt(1);//resultSet取表中列是从1开始的</span></span><br><span class="line"><span class="comment">				String eName = rs.getString(2);</span></span><br><span class="line"><span class="comment">				String eJob = rs.getString(3);</span></span><br><span class="line"><span class="comment">				Integer eMger = rs.getInt(4);</span></span><br><span class="line"><span class="comment">				Date hdate = rs.getDate(5);</span></span><br><span class="line"><span class="comment">				Integer sal = rs.getInt(6);</span></span><br><span class="line"><span class="comment">				Integer com = rs.getInt(7);</span></span><br><span class="line"><span class="comment">				Integer deptNO = rs.getInt(8);*/</span></span><br><span class="line">				empObj = <span class="keyword">new</span> Emp();</span><br><span class="line">				empObj.setEmpNo( rs.getInt(<span class="string">"EMPNO"</span>));<span class="comment">//也可以写表的列名</span></span><br><span class="line">				empObj.seteName(rs.getString(<span class="number">2</span>));</span><br><span class="line">				empObj.seteJob(rs.getString(<span class="number">3</span>));</span><br><span class="line">				empObj.seteMge(rs.getInt(<span class="number">4</span>));</span><br><span class="line">				empObj.setHdate(rs.getDate(<span class="number">5</span>));</span><br><span class="line">				empObj.setSal(rs.getInt(<span class="number">6</span>));</span><br><span class="line">				empObj.setCom(rs.getInt(<span class="number">7</span>));</span><br><span class="line">				empObj.setDeptNO(rs.getInt(<span class="number">8</span>));</span><br><span class="line">				emps.add(empObj);</span><br><span class="line">				<span class="comment">//System.out.println(empObj);</span></span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (Emp emp : emps) &#123;</span><br><span class="line">				System.out.println(emp);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">			<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="comment">//先关闭预编译对象。再关闭连接</span></span><br><span class="line">				rs.close();</span><br><span class="line">				con.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">				<span class="comment">// TODO Auto-generated catch block</span></span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//测试preparedStatementer的更新功能</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">updatedelete</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="comment">////////////////////////////////////测试preparedStatementer的更新功能///////////////////////////////////////</span></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 对于多条数据集更新，必须用事务才能保证数据完整，connection对象是默认事务</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">		<span class="comment">// 取得连接对象</span></span><br><span class="line">		Connection con1 = DBHElper.getConnection();</span><br><span class="line">		String addSql = <span class="string">"insert into emp(empno,ename,sal,deptno) values(?,?,?,?)"</span>;</span><br><span class="line">		String updatesql = <span class="string">"update emp set sal = sal+100 where empno=?"</span>;</span><br><span class="line">		String delsql = <span class="string">"delete from emp where empno = ?"</span>;</span><br><span class="line">		Object[] paraments1 = <span class="keyword">new</span> Object[] &#123; <span class="number">1000</span>, <span class="string">"hjg"</span>, <span class="number">4500</span>, <span class="number">30</span> &#125;;</span><br><span class="line">		Object[] paraments2 = <span class="keyword">new</span> Object[] &#123;<span class="number">1000</span>&#125;;</span><br><span class="line">		Object[] paraments3 = <span class="keyword">new</span> Object[] &#123;<span class="number">1000</span>&#125;;</span><br><span class="line">		<span class="keyword">if</span> (DBHElper.execute1(updatesql, paraments2, con1) &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			System.out.println(<span class="string">"修改数据成功"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Statemnet和PrepareStatement区别</p>
+<p>1.Statement支持批处理，但是要求SQL语句必须update类型语句，不能设置参数，性能低</p>
+<p>2.PrepareStatement可以 预处理，批处理，延迟加载性能高，支持设置多个参数</p>
+<p>使用Statement对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">	<span class="comment">// 使用statement对象，批处理多条SQL语句</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testStatement</span><span class="params">(Connection con)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="comment">// 创建statement对象，取得编译对象</span></span><br><span class="line">			ss = con.createStatement();</span><br><span class="line">			<span class="comment">// ss.addBatch(sql);//sql:select *from emp where empno=7369;</span></span><br><span class="line">			<span class="comment">// 增加参数</span></span><br><span class="line">			String sql1 = <span class="string">"update emp set sal= sal +10000 where empno=7369"</span>;</span><br><span class="line">			String sql2 = <span class="string">"update emp set sal = sal + 500 where empno=7499"</span>;</span><br><span class="line">			String sql3 = <span class="string">"delete from emp where empno=1234"</span>;</span><br><span class="line">			System.out.println(<span class="string">"==================="</span>);</span><br><span class="line">			<span class="comment">// statements有批处理更新功能（包括插入数据，修改数据，删除数据）</span></span><br><span class="line">			ss.addBatch(sql1);</span><br><span class="line">			ss.addBatch(sql2);</span><br><span class="line">			ss.addBatch(sql3);</span><br><span class="line">			<span class="comment">// 执行查询</span></span><br><span class="line">			<span class="keyword">int</span> roes[] = ss.executeBatch();<span class="comment">// 表示执行每一条SQL语句成功后影响的数据行数</span></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; roes.length; i++) &#123;</span><br><span class="line">				System.out.println(roes[i]);</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/*public static void test() &#123;</span></span><br><span class="line"><span class="comment">		Connection con = TestJDBC.getConnection();</span></span><br><span class="line"><span class="comment">		ResultSet rSet = TestJDBC.execute(null, null, con);</span></span><br><span class="line"><span class="comment">		// 使用结果集打印输出</span></span><br><span class="line"><span class="comment">		try &#123;</span></span><br><span class="line"><span class="comment">			while (rSet.next()) &#123;// 如果结果集有数据行，next()返回true</span></span><br><span class="line"><span class="comment">				// 把所查询的表的列的类型与java做一对一翻译</span></span><br><span class="line"><span class="comment">				Integer empNO = rSet.getInt(1);// 结果集第一列从1开始写</span></span><br><span class="line"><span class="comment">				String eName = rSet.getString(2);</span></span><br><span class="line"><span class="comment">				String eJob = rSet.getString(3);</span></span><br><span class="line"><span class="comment">				Integer emagnger = rSet.getInt(4);</span></span><br><span class="line"><span class="comment">				Date hDate = rSet.getDate(5);</span></span><br><span class="line"><span class="comment">				System.out.println("员工编号" + empNO + "姓名" + eName + "职位" + eJob + "上司编号" + emagnger + "入职时间" + hDate);</span></span><br><span class="line"><span class="comment">			&#125;</span></span><br><span class="line"><span class="comment">		&#125; catch (SQLException e) &#123;</span></span><br><span class="line"><span class="comment">			e.printStackTrace();</span></span><br><span class="line"><span class="comment">		&#125;finally &#123;</span></span><br><span class="line"><span class="comment">			try &#123;</span></span><br><span class="line"><span class="comment">				rSet.close();</span></span><br><span class="line"><span class="comment">				con.close();</span></span><br><span class="line"><span class="comment">			&#125; catch (SQLException e) &#123;</span></span><br><span class="line"><span class="comment">				// TODO Auto-generated catch block</span></span><br><span class="line"><span class="comment">				e.printStackTrace();</span></span><br><span class="line"><span class="comment">			&#125;</span></span><br><span class="line"><span class="comment">			</span></span><br><span class="line"><span class="comment">		&#125;</span></span><br><span class="line"><span class="comment">	&#125;*/</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <div>
+  
+</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://ws1119.github.io/2019/07/24/I-O流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -407,13 +1222,23 @@
                 
               
 
-              <time title="创建时间：2019-07-24 23:20:12 / 修改时间：23:53:19" itemprop="dateCreated datePublished" datetime="2019-07-24T23:20:12+08:00">2019-07-24</time>
+              <time title="创建时间：2019-07-24 23:20:12" itemprop="dateCreated datePublished" datetime="2019-07-24T23:20:12+08:00">2019-07-24</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-25 09:08:31" itemprop="dateModified" datetime="2019-07-25T09:08:31+08:00">2019-07-25</time>
+              </span>
             
           
 
@@ -506,6 +1331,8 @@
 <p><code>BufferedWriter bw=new BufferedWriter(new FileWriter(&quot;&quot;))</code>:创建一个新的缓冲输出流</p>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Buffer_StringStream</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">buffer_RW</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">		BufferedReader br=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(<span class="string">""</span>));</span><br><span class="line">		BufferedWriter bw=<span class="keyword">new</span> BufferedWriter(<span class="keyword">new</span> FileWriter(<span class="string">""</span>));</span><br><span class="line">		String line=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">while</span>((line=br.readLine())!=<span class="keyword">null</span>) &#123;</span><br><span class="line">				System.out.print(line);</span><br><span class="line">				System.out.println(<span class="string">"-----------"</span>);</span><br><span class="line">				bw.write(line);</span><br><span class="line">		&#125;</span><br><span class="line">		br.close();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+
 
 </li>
 </ul>
@@ -1728,7 +2555,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1760,7 +2587,9 @@
         
           
         
-        <span class="site-state-item-count">2</span>
+          
+        
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span>
         
       </div>
