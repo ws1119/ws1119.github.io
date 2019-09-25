@@ -65,17 +65,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java开发环境配置]]></title>
-    <url>%2F2019%2F07%2F21%2FJava%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[Windows上安装Java环境下载JDK及安装 首先首先我们需要下载java开发工具包JDK，下载地址：http://www.oracle.com/technetwork/java/javase/downloads/index.html，点击如下下载按钮： 在下载页面中你需要选择接受许可，并根据自己的系统选择对应的版本，本文以 Window64位系统为例： 下载后JDK的安装根据提示进行，还有安装JDK的时候也会安装JRE，一并安装就可以了。 安装JDK，安装过程中可以自定义安装目录等信息，例如我们选择安装目录为 C:\Program Files (x86)\Java\jdk1.8.0_91。 配置环境变量 安装完成后，右击”我的电脑”，点击”属性”，选择”高级系统设置”； 选择”高级”选项卡，点击”环境变量”； 然后就会出现如下图所示的画面：]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[equals方法重写]]></title>
     <url>%2F2019%2F07%2F21%2Fequals%E6%96%B9%E6%B3%95%E9%87%8D%E5%86%99%2F</url>
     <content type="text"><![CDATA[重写equals方法equals方法也是object类中的一个方法，调用object类就可以找到，是一个boolean类型的方法，用于比较两个对象是否相等 代码演示 123456789101112public boolean equals(Object obj) &#123; //判断对象地址是否相等，如果是就不用判断 if(this == obj) &#123; return false; &#125; 判断对象是否为空以及两个对象是否相等 if(obj == null || this.getClass() != obj.getClass()) &#123; return true; &#125; Equels equels = (Equels) obj; //判断成员变量 return age ==equels.age &amp;&amp; Objects.equals(getName(), equels.getName())]]></content>
